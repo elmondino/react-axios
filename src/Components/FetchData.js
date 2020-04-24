@@ -1,30 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-class FetchData extends React.Component {
-    state = {
-        persons: ''
-    }
-    getData() {
+const FetchData = () => {
+    const [users, setUsers] = useState(false);
+
+    const getData = () => {
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then( (response) => {
-                this.setState({
-                    persons: response.data
-                }) 
+                setUsers(response.data)
             })
             .catch((error) => {
                 console.log(error);
             })
     }
-    componentDidMount() {
-        this.getData();
-    }
-    render(){
-        let displayData = this.state.persons.length ? (this.state.persons[0].name) : ("fetching data")
-        return (
-            <div><h1>{displayData}</h1></div>
-        )
-    }
+    useEffect(() => {
+        getData()
+    }, [])
+    
+    let displayData = users.length ? (users[0].name) : ("fetching data")
+    return (
+        <div><h1>{displayData}</h1></div>
+    )
 }
 
 export default FetchData;

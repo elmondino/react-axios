@@ -1,4 +1,7 @@
-I've added two ways to fetch the data through class with state or with function with react Hooks.
+### I've added two ways to fetch data with AXIOS
+### With class component using state and function using React Hooks.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

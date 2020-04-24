@@ -1,5 +1,5 @@
-### I've added two ways to fetch data with AXIOS
-### With class component using state and function using React Hooks.
+### `I've added two ways to fetch data with AXIOS`
+### `With class component using state and function using React Hooks.`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

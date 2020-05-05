@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 const FetchData = () => {
-    const [users, setUsers] = useState(false);
+    const [users, setUsers] = useState(null);
 
     const getData = () => {
         axios.get('https://jsonplaceholder.typicode.com/users')

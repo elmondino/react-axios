@@ -1,4 +1,4 @@
-### `I've added two ways to fetch data with AXIOS`
+### `Added two ways to fetch data with AXIOS`
 ### `With class component using state and function using React Hooks.`
 
 
